@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    container_name: twitter-search
+    build: ./django
+    volumes:
+      - ../src:/usr/src/twitter
+      - ./django:/usr/src/run
+    ports:
+      - "8004:8000"
+    command: bash /usr/src/run/run.sh
