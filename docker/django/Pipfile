@@ -1,0 +1,12 @@
+[[source]]
+verify_ssl = true
+name = "pypi"
+url = "https://pypi.python.org/simple"
+
+[packages]
+django = "==2.1.7"
+requests = "==2.21.0"
+beautifulsoup4 = "==4.7.1"
+
+[requires]
+python_version = "3.6"
